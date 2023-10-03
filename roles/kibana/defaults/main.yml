@@ -19,4 +19,4 @@ xpack_security_enabled: true
 
 elasticsearch_ssl_certificateAuthorities: "/etc/kibana/certs/elasticsearch-ca.pem"
 
-xpack_security_encryptionKey: ""
+xpack_security_encryptionKey: adarsh
