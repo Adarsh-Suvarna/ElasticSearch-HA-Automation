@@ -2,7 +2,7 @@
 # defaults file for elasticsearch
 
 cluster_name: demo-elk
-node_name: elk-1
+node_name_prefix: elk
 
 
 path_data: /var/lib/elasticsearch
@@ -12,10 +12,19 @@ path_logs: /var/log/elasticsearch
 network_host: 0.0.0.0
 http_port: 9200
 
-discovery_type: single-node
+# discovery_type: single-node
 
 # X-pack configuration
 xpack_security_enabled: true
+xpack_security_transport_ssl_enabled: true
+xpack_security_transport_ssl_verification_mode: certificate
+xpack_security_transport_ssl_client_authentication: required
+xpack_security_transport_ssl_keystore_path: /etc/elasticsearch/certs/elastic-certificates.p12
+xpack_security_transport_ssl_truststore_path: /etc/elasticsearch/certs/elastic-certificates.p12
+xpack_security_http_ssl_enabled: true
+xpack_security_http_ssl_keystore_path: /etc/elasticsearch/certs/http.p12
+xpack_monitoring_collection_enabled: true
+xpack_monitoring_elasticsearch_collection_enabled: true
 
 es_home: /usr/share/elasticsearch
 es_conf_dir: /etc/elasticsearch
@@ -33,4 +42,3 @@ es_security_api: _security
 
 es_validate_certs: no
 es_force_basic_auth: yes
-

@@ -8,6 +8,17 @@
    name: kibana
    update_cache: yes
 
+- name: Ensure the certs directory exists
+  ansible.builtin.file:
+    path: /etc/kibana/certs
+    state: directory
+    mode: '0777'
+
+- name: Copy certificate file
+  copy:
+    src: ../../files/elasticsearch-ca.pem
+    dest: /etc/kibana/certs/
+
 # Replacing default kibana.yml with updated file
 
 - name: Replacing default kibana.yml with updated file

@@ -65,11 +65,12 @@ http.port: {{ http_port }}
 # Pass an initial list of hosts to perform discovery when this node is started:
 # The default list of hosts is ["127.0.0.1", "[::1]"]
 #
-#discovery.seed_hosts: ["host1", "host2"]
+discovery.seed_hosts: ["{{elasticsearch_host_1 }}", "{{elasticsearch_host_2 }}", "{{elasticsearch_host_3 }}"]
 #
 # Bootstrap the cluster using an initial set of master-eligible nodes:
 #
-#cluster.initial_master_nodes: ["node-1", "node-2"]
+# cluster.initial_master_nodes: ["{{ node_name }}"]
+cluster.initial_master_nodes: ["{{elasticsearch_host_1 }}", "{{elasticsearch_host_2 }}"]
 #
 # For more information, consult the discovery and cluster formation module documentation.
 #
@@ -87,7 +88,19 @@ http.port: {{ http_port }}
 #
 #action.destructive_requires_name: true
 
-discovery.type: {{ discovery_type }}
+# discovery.type: {{ discovery_type }}
 
 # -------------------------------- X-pack security Configuration ----------------
 xpack.security.enabled: {{ xpack_security_enabled }}
+xpack.security.transport.ssl.enabled: {{ xpack_security_transport_ssl_enabled }}
+xpack.security.transport.ssl.verification_mode: {{ xpack_security_transport_ssl_verification_mode }}
+xpack.security.transport.ssl.client_authentication: {{ xpack_security_transport_ssl_client_authentication }}
+xpack.security.transport.ssl.keystore.path: {{ xpack_security_transport_ssl_keystore_path }}
+xpack.security.transport.ssl.truststore.path: {{ xpack_security_transport_ssl_truststore_path }}
+
+xpack.security.http.ssl.enabled: {{ xpack_security_http_ssl_enabled }}
+xpack.security.http.ssl.keystore.path: {{ xpack_security_http_ssl_keystore_path }}
+
+# ---------------------------------- X-pack monitoring ----------------------------------
+xpack.monitoring.collection.enabled: {{ xpack_monitoring_collection_enabled }}
+xpack.monitoring.elasticsearch.collection.enabled: {{ xpack_monitoring_elasticsearch_collection_enabled }}
