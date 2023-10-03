@@ -9,7 +9,7 @@
 # Set unique node name
 - name: Set unique node name
   set_fact:
-    node_name: "{{ node_name_prefix }}_{{ item | string | regex_replace('^(\d)$', '0\1') }}"
+    node_name: "{{ node_name_prefix }}_{{ item | string | regex_replace('^(\d)$', '0\\1') }}"
   loop: "{{ range(0, 101) | list }}"
 
 - name: Ensure the certs directory exists
