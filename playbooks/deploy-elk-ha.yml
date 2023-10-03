@@ -4,7 +4,7 @@
   roles:
   - ../roles/add-elastic-repo
 
-# This playbook will deploy JDK
+# This playbook will deploy ELK
 - hosts: elk
   become: yes
   vars_files: 
@@ -14,19 +14,13 @@
   roles:
   - ../roles/java
   - ../roles/elasticsearch
-  - ../roles/kibana
-  # - ../roles/metricbeat
-  # - ../roles/filebeat
-  # - ../roles/config-beats-elastic
 
-# This playbook will deploy ELK stack
-# - hosts: webservers
-#   become: yes
-#   vars_files:
-#   - ../vars/credentials.yml
-#   - ../vars/main.yml
-#   roles:
-#   - ../roles/webserver
-#   - ../roles/metricbeat
-#   - ../roles/filebeat
-#   - ../roles/config-beats-webserver
+# This playbook will deploy ELK
+- hosts: kibana
+  become: yes
+  vars_files: 
+  - ../vars/credentials.yml
+  - ../vars/main.yml
+
+  roles:
+  - ../roles/kibana

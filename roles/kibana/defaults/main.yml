@@ -4,12 +4,17 @@
 ## server settings
 server_port: 5601
 server_host: 0.0.0.0
-server_name: demo-kibana
+server_name: kibana
+
+kibana_server_public_BaseUrl: "http://192.168.1.13:5601"
 
 ## elasticsearch hosts
-elasticsearch_host: http://localhost:9200
+elasticsearch_host_1: https://192.168.1.10:9200
+elasticsearch_host_2: https://192.168.1.11:9200
+elasticsearch_host_3: https://192.168.1.12:9200
 
 ## xpack security settings
 
-xpack_security_encryptionKey: mynameisanthonygonsalvesmainduniyameinakelahoo
+xpack_security_enabled: true
 
+elasticsearch_ssl_certificateAuthorities: "/etc/kibana/certs/elasticsearch-ca.pem"
