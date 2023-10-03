@@ -12,8 +12,6 @@ path_logs: /var/log/elasticsearch
 network_host: 0.0.0.0
 http_port: 9200
 
-# discovery_type: single-node
-
 # X-pack configuration
 xpack_security_enabled: true
 xpack_security_transport_ssl_enabled: true
