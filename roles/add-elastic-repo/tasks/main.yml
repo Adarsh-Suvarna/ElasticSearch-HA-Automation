@@ -1,0 +1,29 @@
+---
+# tasks file for add-elastic-repo
+
+# Adde Elasticsearch PSK
+
+- name: Elasticsearch PSK
+  apt_key:
+   url: "{{ elastic_psk_url }}"
+   state: present
+
+#Install Transport Module
+
+- name: Install TP
+  apt:
+    name: apt-transport-https
+    update_cache: yes
+
+#Add Elasticsearch repo definitions
+
+- name: Elasticsearch repo definitions
+  apt_repository:
+    repo: deb {{ elastic_repo }} stable main
+    state: present
+
+#System Update
+
+- name: System Update
+  apt:
+    update_cache: yes

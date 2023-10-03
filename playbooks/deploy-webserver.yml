@@ -1,0 +1,7 @@
+---
+# This playbook will deploy webserver
+
+- hosts: webservers
+  become: yes
+  roles:
+  - ../roles/webserver
