@@ -102,3 +102,5 @@ xpack.security.http.ssl.keystore.path: {{ xpack_security_http_ssl_keystore_path 
 # ---------------------------------- X-pack monitoring ----------------------------------
 xpack.monitoring.collection.enabled: {{ xpack_monitoring_collection_enabled }}
 xpack.monitoring.elasticsearch.collection.enabled: {{ xpack_monitoring_elasticsearch_collection_enabled }}
+
+xpack.security.authc.api_key.enabled: true
