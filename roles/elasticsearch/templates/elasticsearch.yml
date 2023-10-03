@@ -88,7 +88,7 @@ cluster.initial_master_nodes: ["{{elasticsearch_host_1 }}", "{{elasticsearch_hos
 #
 #action.destructive_requires_name: true
 
-# discovery.type: {{ discovery_type }}
+discovery.type: {{ discovery_type }}
 
 # -------------------------------- X-pack security Configuration ----------------
 xpack.security.enabled: {{ xpack_security_enabled }}
