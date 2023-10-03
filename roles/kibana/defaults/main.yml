@@ -18,3 +18,5 @@ elasticsearch_host_3: https://192.168.1.12:9200
 xpack_security_enabled: true
 
 elasticsearch_ssl_certificateAuthorities: "/etc/kibana/certs/elasticsearch-ca.pem"
+
+xpack_security_encryptionKey: ""
