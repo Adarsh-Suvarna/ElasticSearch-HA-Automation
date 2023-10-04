@@ -13,8 +13,6 @@
    src: metricbeat/apache.yml
    dest: /etc/metricbeat/modules.d/apache.yml
 
-
-
 - name: Configuring apache module
   template:
    src: filebeat/apache.yml

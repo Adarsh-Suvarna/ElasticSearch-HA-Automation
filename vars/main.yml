@@ -8,6 +8,8 @@ auditbeat_http_port: 5068
 elasticsearch_host_1: 192.168.1.4
 elasticsearch_host_2: 192.168.1.9
 elasticsearch_host_3: 192.168.1.8
+heartbeat_http_port: 5069
+packetbeat_http_port: 5070
 
 kibana_host: 192.168.1.5
 
