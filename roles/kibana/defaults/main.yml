@@ -11,19 +11,10 @@ kibana_server_public_BaseUrl_host: "192.168.1.13"
 kibana_server_public_BaseUrl_port: 5601
 kibana_server_public_BaseUrl: "{{ kibana_server_public_BaseUrl_protocol }}://{{ kibana_server_public_BaseUrl_host }}:{{ kibana_server_public_BaseUrl_port }}"
 
-
-## elasticsearch hosts
-elasticsearch_protocol: https
-elasticsearch_port: 9200
-elasticsearch_host_vm_1: 192.168.1.10
-elasticsearch_host_vm_2: 192.168.1.11
-elasticsearch_host_vm_3: 192.168.1.12
-
-
 ## xpack security settings
 
 xpack_security_enabled: true
 
 elasticsearch_ssl_certificateAuthorities: "/etc/kibana/certs/elasticsearch-ca.pem"
 
-xpack_security_encryptionKey: adarsh
+# xpack_security_encryptionKey: adarsh
