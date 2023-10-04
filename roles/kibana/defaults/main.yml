@@ -13,11 +13,11 @@ kibana_server_public_BaseUrl: "{{ kibana_server_public_BaseUrl_protocol }}://{{ 
 
 
 ## elasticsearch hosts
-elasticsearch_protocol: "https"
+elasticsearch_protocol: https
 elasticsearch_port: 9200
-elasticsearch_host_vm_1: "192.168.1.10"
-elasticsearch_host_vm_2: "192.168.1.11"
-elasticsearch_host_vm_3: "192.168.1.12"
+elasticsearch_host_vm_1: 192.168.1.10
+elasticsearch_host_vm_2: 192.168.1.11
+elasticsearch_host_vm_3: 192.168.1.12
 
 elasticsearch_host_1: "{{ elasticsearch_protocol }}://{{ elasticsearch_host_vm_1 }}:{{ elasticsearch_port }}"
 elasticsearch_host_2: "{{ elasticsearch_protocol }}://{{ elasticsearch_host_vm_2 }}:{{ elasticsearch_port }}"
