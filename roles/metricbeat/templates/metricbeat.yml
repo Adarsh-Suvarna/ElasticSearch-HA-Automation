@@ -91,7 +91,7 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["{{ elastic_host }}:{{ elastic_port }}"]
+  hosts: ["{{ elasticsearch_host_1 }}:{{ elastic_port }}", "{{ elasticsearch_host_2 }}:{{ elastic_port }}", "{{ elasticsearch_host_3 }}:{{ elastic_port }}"]
 
   # Protocol - either `http` (default) or `https`.
   protocol: "{{ elastic_protocol }}"
