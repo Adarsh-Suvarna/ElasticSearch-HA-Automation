@@ -19,13 +19,13 @@
 
 - name: Copy certificate file
   copy:
-    src: ../../files/elastic-certificates.p12
+    src: files/elastic-certificates.p12
     dest: /etc/elasticsearch/certs/
     remote_src: yes
 
 - name: Copy http p12
   copy:
-    src: ../../files/http.p12
+    src: files/http.p12
     dest: /etc/elasticsearch/certs/
     remote_src: yes
 

@@ -16,7 +16,7 @@
 
 - name: Copy certificate file
   copy:
-    src: ../../files/elasticsearch-ca.pem
+    src: files/elasticsearch-ca.pem
     dest: /etc/kibana/certs/
     remote_src: yes
 
