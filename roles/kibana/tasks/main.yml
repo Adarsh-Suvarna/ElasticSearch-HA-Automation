@@ -12,12 +12,13 @@
   ansible.builtin.file:
     path: /etc/kibana/certs
     state: directory
-    mode: '0777'
+    mode: '0775'
 
 - name: Copy certificate file
   copy:
     src: ../../files/elasticsearch-ca.pem
     dest: /etc/kibana/certs/
+    remote_src: yes
 
 # Replacing default kibana.yml with updated file
 

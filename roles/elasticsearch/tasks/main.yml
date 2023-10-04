@@ -15,17 +15,19 @@
   ansible.builtin.file:
     path: /etc/elasticsearch/certs
     state: directory
-    mode: '0777'
+    mode: '0775'
 
 - name: Copy certificate file
   copy:
     src: ../../files/elastic-certificates.p12
     dest: /etc/elasticsearch/certs/
+    remote_src: yes
 
 - name: Copy http p12
   copy:
     src: ../../files/http.p12
     dest: /etc/elasticsearch/certs/
+    remote_src: yes
 
 # Replace default elasticsearch.yml
 - name: Replace default elasticsearch.yml

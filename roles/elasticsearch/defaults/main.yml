@@ -2,8 +2,6 @@
 # defaults file for elasticsearch
 
 cluster_name: demo-elk
-# node_name_prefix: "elk-"
-
 
 path_data: /var/lib/elasticsearch
 path_logs: /var/log/elasticsearch
