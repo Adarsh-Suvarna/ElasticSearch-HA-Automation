@@ -27,7 +27,10 @@ server.publicBaseUrl: "{{ kibana_server_public_BaseUrl }}"
 # server.name: "{{ server_name }}"
 
 # The URLs of the Elasticsearch instances to use for all your queries.
-elasticsearch.hosts: ["{{ elasticsearch_host_1 }}", "{{ elasticsearch_host_2 }}", "{{ elasticsearch_host_3 }}"]
+elasticsearch.hosts:
+  - "{{ elasticsearch_protocol }}://{{ elasticsearch_host_vm_1 }}:{{ elasticsearch_port }}"
+  - "{{ elasticsearch_protocol }}://{{ elasticsearch_host_vm_2 }}:{{ elasticsearch_port }}"
+  - "{{ elasticsearch_protocol }}://{{ elasticsearch_host_vm_3 }}:{{ elasticsearch_port }}"
 
 # When this setting's value is true Kibana uses the hostname specified in the server.host
 # setting. When the value of this setting is false, Kibana uses the hostname of the host
