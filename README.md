@@ -64,8 +64,6 @@ Run the automation script:
    ```bash
    ansible-playbook -i inventory.ini elasticsearch-ha.yml
 
-
-
 ElasticSearch-HA-Automation will automate the deployment of an HA ElasticSearch cluster based on your configuration.
 
 Usage
