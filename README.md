@@ -61,8 +61,6 @@ Modify the ```inventory.ini``` file to specify the target servers for ElasticSea
 Update the elasticsearch.yml file to configure ElasticSearch settings.
 Run the automation script:
 
-1. Change to the project directory:
-
    ```bash
    ansible-playbook -i inventory.ini elasticsearch-ha.yml
 
