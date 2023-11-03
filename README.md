@@ -45,15 +45,15 @@ Before you begin, ensure you have the following prerequisites:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Adarsh-Suvarna/ElasticSearch-HA-Automation.git
-
+```diff
+git clone https://github.com/Adarsh-Suvarna/ElasticSearch-HA-Automation.git
+```
 
 1. Change to the project directory:
 
-   ```bash
-   cd ElasticSearch-HA-Automation
-
+```diff
+cd ElasticSearch-HA-Automation
+```
 
 2. Customize the configuration:
 
@@ -62,7 +62,7 @@ Update the elasticsearch.yml file to configure ElasticSearch settings.
 Run the automation script:
 
 ```diff
-   ansible-playbook -i inventory.ini elasticsearch-ha.yml
+ansible-playbook -i inventory.ini elasticsearch-ha.yml
 ```
 ElasticSearch-HA-Automation will automate the deployment of an HA ElasticSearch cluster based on your configuration.
 
