@@ -113,5 +113,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 We'd like to express our gratitude to the open-source community and the ElasticSearch team for providing such a valuable tool. Special thanks to our contributors for their support and contributions to this project.
-
-Happy Searching!
