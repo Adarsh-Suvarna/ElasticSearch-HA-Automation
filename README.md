@@ -25,34 +25,3 @@ These instructions will help you get started with setting up an Elasticsearch HA
 
    ```bash
    git clone https://github.com/Adarsh-Suvarna/ElasticSearch-HA-Automation.git
-
-
-Customize the configuration files to match your environment. Modify the elasticsearch.yml and other relevant files.
-
-Execute the automation scripts to deploy and configure your Elasticsearch HA cluster.
-
-bash
-Copy code
-# Example for running the setup script
-./setup.sh
-Follow the on-screen instructions and provided documentation to complete the setup.
-
-Configuration
-The elasticsearch.yml file contains the Elasticsearch configuration options, which can be modified to suit your specific requirements.
-Security settings, user management, and authentication mechanisms can be configured for securing your Elasticsearch cluster.
-Usage
-Detailed usage instructions, including how to add and remove nodes, monitor cluster health, and manage data, can be found in the documentation provided in the repository.
-Contributing
-If you'd like to contribute to this project, please follow these guidelines:
-
-Fork the repository.
-Create a new branch for your feature or bug fix.
-Commit your changes.
-Push to your branch.
-Create a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Acknowledgments
-Special thanks to the Elastic team for creating Elasticsearch.
-Feel free to reach out with any questions or issues you encounter while using this repository. Happy searching!
