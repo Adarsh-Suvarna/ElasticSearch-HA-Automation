@@ -2,7 +2,14 @@
 
 ![Elasticsearch Logo](https://play.vidyard.com/Gfs339uMBi1CVavZEjXVZ8.jpg)
 
-This repository contains scripts and configuration files to automate the setup and management of a High Availability (HA) cluster for Elasticsearch. ElasticSearch is a powerful, open-source search and analytics engine commonly used for log and data indexing.
+This repository contains scripts and configuration files to automate the setup and management of a High Availability cluster for Elasticsearch. In this Repository we are going to automate the following.
+1. Java Installation
+2. Elasticsearch Installation and configuration in dedicated VMs
+3. Elasticsearch High Availabilty setup
+4. Kibana Installation and Configuration in dedicated VM
+5. Installation and Configuration of webservers in dedicated VMs
+6. Install and configuration of Filebeat in the webservers VMs
+7. Install and configuration of Metricbeat in the webservers VMs
 
 ## Table of Contents
 
@@ -28,6 +35,9 @@ ElasticSearch is a powerful search engine used for various applications, includi
 - Streamlines the setup process to save time and reduce errors.
 - Ensures data redundancy and reliability.
 - Provides a foundation for scalable ElasticSearch deployments.
+- Automated deployment of Kibana to setup the dashboard
+- Automated deployment of Filbeat to get the Logs from Webservers VMs
+- Automated deployment of Metricbeat to get the Metrics from Webservers VMs
 
 ## Getting Started
 
@@ -57,14 +67,22 @@ cd ElasticSearch-HA-Automation
 
 3. Customize the configuration:
 
-- Modify the ```inventory.ini``` file to specify the target servers for ElasticSearch nodes.
+- Modify the ```hosts.yml``` file to specify the target servers for ElasticSearch nodes.
 - Update the ```elasticsearch.yml``` file to configure ElasticSearch settings.
+- Update the ```kibana.yml``` file to configure Kibana settings.
+- Update the ```filebeat.yml``` file to configure Filebeat settings.
+- Update the ```metricbeat.yml``` file to configure Metricbeat settings.
 
 4. Run the automation script:
 ```diff
-ansible-playbook -i inventory.ini elasticsearch-ha.yml
+ansible-playbook -i inventory/hosts.yml playbooks/deploy-elk-ha.yml
 ```
 ElasticSearch-HA-Automation will automate the deployment of an HA ElasticSearch cluster based on your configuration.
+
+```diff
+ansible-playbook -i inventory/hosts.yml playbooks/deploy-beats.yml
+```
+To install the webservers in the dedicated VMs. Also it will install and configures the Filebeat and Metricbeat in the same VMs.
 
 ## Usage
 After following the installation steps, you will have a fully functional ElasticSearch High Availability cluster. You can interact with the cluster through the ElasticSearch REST API or by configuring your applications to use it as a backend search engine.
