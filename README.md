@@ -61,9 +61,9 @@ Modify the ```inventory.ini``` file to specify the target servers for ElasticSea
 Update the elasticsearch.yml file to configure ElasticSearch settings.
 Run the automation script:
 
-   ```bash
+```diff
    ansible-playbook -i inventory.ini elasticsearch-ha.yml
-
+```
 ElasticSearch-HA-Automation will automate the deployment of an HA ElasticSearch cluster based on your configuration.
 
 Usage
