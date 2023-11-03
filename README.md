@@ -20,9 +20,6 @@ This repository contains scripts and configuration files to automate the setup a
   - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -97,19 +94,3 @@ For more information on how to use ElasticSearch, refer to the ElasticSearch doc
 
 ## Configuration
 You can customize the ElasticSearch cluster configuration by modifying the ```elasticsearch.yml``` file. Ensure that you have reviewed the ElasticSearch documentation for available configuration options.
-
-## Contributing
-We welcome contributions to ElasticSearch-HA-Automation. To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them with clear messages.
-4. Push your branch to your fork.
-5. Create a pull request to the main repository.
-6. Please follow the Contributing Guidelines for more details.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-We'd like to express our gratitude to the open-source community and the ElasticSearch team for providing such a valuable tool. Special thanks to our contributors for their support and contributions to this project.
