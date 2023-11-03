@@ -57,10 +57,10 @@ cd ElasticSearch-HA-Automation
 
 2. Customize the configuration:
 
-Modify the ```inventory.ini``` file to specify the target servers for ElasticSearch nodes.
-Update the elasticsearch.yml file to configure ElasticSearch settings.
-Run the automation script:
+- Modify the ```inventory.ini``` file to specify the target servers for ElasticSearch nodes.
+- Update the ```elasticsearch.yml``` file to configure ElasticSearch settings.
 
+Run the automation script:
 ```diff
 ansible-playbook -i inventory.ini elasticsearch-ha.yml
 ```
