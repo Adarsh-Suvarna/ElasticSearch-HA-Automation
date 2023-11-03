@@ -1,6 +1,6 @@
 # ElasticSearch High Availability Automation
 
-![Elasticsearch Logo](images/elastic-logo-200.png)
+![Elasticsearch Logo](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elastic.co%2Fcloud&psig=AOvVaw3ZTSd2q9K7ATjxoC4t8_X-&ust=1699087928558000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNim1_65p4IDFQAAAAAdAAAAABAE)
 
 This repository contains scripts and configuration files to automate the setup and management of a High Availability (HA) cluster for Elasticsearch. ElasticSearch is a powerful, open-source search and analytics engine commonly used for log and data indexing.
 
