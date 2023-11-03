@@ -41,7 +41,7 @@ ElasticSearch is a powerful search engine used for various applications, includi
 
 Follow these steps to get started with ElasticSearch-HA-Automation.
 
-1. Add the SSL certificates in the ```files``` directory. i.e ```elastic-certificates.p12``` and ```elasticsearch-ca.pem``` files.
+1. Add the SSL certificates in the ```files``` directory. i.e., ```elastic-certificates.p12``` and ```elasticsearch-ca.pem``` files.
 2. Add the Username and password for the Elasticsearch login in the ```vars/credentials.yml``` file.
 3. Add the required variables in the ```vars/main.yml``` file.
 
@@ -98,3 +98,9 @@ For more information on how to use ElasticSearch, refer to the ElasticSearch doc
 
 ## Configuration
 You can customize the ElasticSearch cluster configuration by modifying the ```elasticsearch.yml``` file. Ensure that you have reviewed the ElasticSearch documentation for available configuration options. To customize the Kibana configuration modify the ```kibana.yml``` file.
+
+## Contact Me
+
+For any clarification, feel free to write to me 
+- adarsha.suvarna@niveussolutions.com
+- https://www.linkedin.com/in/adarsh-suvarna
