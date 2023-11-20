@@ -16,6 +16,12 @@
    src: metricbeat.yml
    dest: /etc/metricbeat/metricbeat.yml
 
+#--------- Adding a delay before starting metricbeat service
+
+- name: Pause before starting metricbeat
+  pause:
+    seconds: 15  # Adjust the delay time as needed
+
 #--------- Starting metricbeat service
 
 - name: Starting metricbeat

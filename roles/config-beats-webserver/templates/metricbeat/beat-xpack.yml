@@ -4,6 +4,6 @@
 - module: beat
   xpack.enabled: true
   period: 10s
-  hosts: ["{{elastic_protocol}}://localhost:{{filebeat_http_port}}", "http://localhost:{{auditbeat_http_port}}", "http://localhost:{{packetbeat_http_port}}"]
+  hosts: ["{{elastic_protocol}}://localhost:{{filebeat_http_port}}"]
   username: "{{beats_system_username}}"
   password: "{{beats_system_password}}"

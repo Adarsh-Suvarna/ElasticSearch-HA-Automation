@@ -16,6 +16,12 @@
    src: filebeat.yml
    dest: /etc/filebeat/filebeat.yml
 
+#--------- Adding a delay before starting filebeat service
+
+- name: Pause before starting filebeat
+  pause:
+    seconds: 15  # Adjust the delay time as needed
+    
 #--------- Starting filebeat service
 
 - name: Starting filebeat
