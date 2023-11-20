@@ -5,9 +5,9 @@ kibana_port: 5601
 filebeat_http_port: 5067
 auditbeat_http_port: 5068
 
-elasticsearch_host_1: 192.168.1.4
-elasticsearch_host_2: 192.168.1.9
-elasticsearch_host_3: 192.168.1.8
+elasticsearch_host_1: 192.168.1.7
+elasticsearch_host_2: 192.168.1.8
+elasticsearch_host_3: 192.168.1.9
 heartbeat_http_port: 5069
 packetbeat_http_port: 5070
 
