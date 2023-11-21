@@ -7,9 +7,9 @@ server_host: 0.0.0.0
 server_name: kibana
 
 kibana_server_public_BaseUrl_protocol: "http"
-kibana_server_public_BaseUrl_host: "192.168.1.13"
-kibana_server_public_BaseUrl_port: 5601
-kibana_server_public_BaseUrl: "{{ kibana_server_public_BaseUrl_protocol }}://{{ kibana_server_public_BaseUrl_host }}:{{ kibana_server_public_BaseUrl_port }}"
+# kibana_server_public_BaseUrl_host: "{{ kibana_host }}"
+# kibana_server_public_BaseUrl_port: 5601
+kibana_server_public_BaseUrl: "{{ kibana_server_public_BaseUrl_protocol }}://{{ kibana_host }}:{{ server_port }}"
 
 ## xpack security settings
 

@@ -27,4 +27,3 @@ logging_file_permissions: 0644
 #------------Monitoring -------------------
 http_enabled: true
 http_port: 5067
-
